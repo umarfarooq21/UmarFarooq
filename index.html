@@ -1,11 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Umar Farooq | Senior Software Engineer</title>
+    <meta name="description" content="Professional portfolio of Your Name - Developer">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            text-align: center;
+            padding: 15px;
+            background: #444;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #222;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .about, .skills, .projects, .experience, .contact {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        .skills-list, .projects-list, .exp-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li {
+            padding: 5px 0;
+        }
+        .projects-list li {
+            margin-bottom: 15px;
+        }
+        .contact-form input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+        .btn {
+            background: #222;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Umar Farooq</h1>
-    <p>iOS Developer</p>
-    <p>Welcome to my portfolio website.</p>
+
+<!-- HEADER -->
+<header>
+    <h1>Your Name</h1>
+    <p>Web / Mobile Developer | Portfolio</p>
+</header>
+
+<!-- NAV -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m <strong>Your Name</strong>. I am a Web & Mobile Developer with experience in building modern apps and websites. I love creating useful solutions with clean and elegant code.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Swift / SwiftUI</li>
+        <li>Git & GitHub</li>
+    </ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <ul class="projects-list">
+        <li>
+            <strong>Project One</strong> - A website that does XYZ.
+            <br><a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+        </li>
+        <li>
+            <strong>Project Two</strong> - Mobile App for ABC.
+            <br><a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+        </li>
+    </ul>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="experience">
+    <h2>Experience</h2>
+    <ul class="exp-list">
+        <li><strong>Intern Developer</strong> - Company Name (2024)</li>
+        <li><strong>Freelance Developer</strong> - Self (2023 – Present)</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button class="btn">Send Message</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Your Name
+</footer>
+
 </body>
 </html>
