@@ -1,174 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Umar Farooq | Senior Software Engineer</title>
-    <meta name="description" content="Professional portfolio of Your Name - Developer">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #222;
-            color: #fff;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-        header p {
-            font-size: 1.2em;
-        }
-        nav {
-            text-align: center;
-            padding: 15px;
-            background: #444;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h2 {
-            color: #222;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .about, .skills, .projects, .experience, .contact {
-            background: white;
-            border-radius: 8px;
-            margin-bottom: 40px;
-            padding: 20px;
-        }
-        .skills-list, .projects-list, .exp-list {
-            list-style: none;
-            padding: 0;
-        }
-        .skills-list li {
-            padding: 5px 0;
-        }
-        .projects-list li {
-            margin-bottom: 15px;
-        }
-        .contact-form input {
-            width: 100%;
-            padding: 12px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: 1px solid #aaa;
-            border-radius: 4px;
-        }
-        .contact-form textarea {
-            width: 100%;
-            padding: 12px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: 1px solid #aaa;
-            border-radius: 4px;
-        }
-        .btn {
-            background: #222;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            border: none;
-            cursor: pointer;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #222;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Umar Farooq | Senior Software Engineer</title>
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HEADER -->
-<header>
-    <h1>Your Name</h1>
-    <p>Web / Mobile Developer | Portfolio</p>
+<button class="theme-toggle" onclick="toggleTheme()">
+  <i class="fa-solid fa-circle-half-stroke"></i>
+</button>
+
+<!-- HERO -->
+<header class="hero fade-in show">
+  <img src="Images/salman.jpg" alt="Muhammad Umar Farooq" class="profile-img">
+  <h1>Muhammad Umar Farooq</h1>
+  <p class="hero-subtitle">Senior Software Engineer</p>
+  <p class="hero-desc">SwiftUI • UIKit • iOS Developer • Flutter</p>
+
+  <div class="hero-contact">
+    <span><i class="fa-solid fa-envelope"></i> mr.khan21991@gmail.com</span>
+    <span><i class="fa-solid fa-phone"></i> +974 11110000</span>
+    <span><i class="fa-solid fa-location-dot"></i> Doha, Qatar</span>
+  </div>
 </header>
 
-<!-- NAV -->
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-</nav>
+<main>
 
 <!-- ABOUT -->
-<section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Hello! I’m <strong>Your Name</strong>. I am a Web & Mobile Developer with experience in building modern apps and websites. I love creating useful solutions with clean and elegant code.</p>
+<section class="section slide-up">
+  <h2>About Me</h2>
+  <p>
+    I am a Senior Mobile Developer with 10+ years of experience building high-quality, scalable, and user-friendly mobile applications. I specialize in iOS development using SwiftUI and UIKit, and I also build cross-platform apps using Flutter.  I design and develop robust, real-time, and performance-driven applications that deliver smooth user experiences. My daily work includes creating modern mobile architectures, integrating APIs, improving app performance, and maintaining clean, reusable code.
+  </p>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Swift / SwiftUI</li>
-        <li>Git & GitHub</li>
-    </ul>
+<!-- TECH STACK -->
+<section class="section slide-up">
+  <h2>Technology Stack</h2>
+  <div class="tech-grid">
+    <div class="tech"><i class="fa-brands fa-microsoft"></i>SwitUI / UIKit / Objective-C</div>
+    <div class="tech"><i class="fa-solid fa-diagram-project"></i>Alamofire</div>
+    <div class="tech"><i class="fa-solid fa-bolt"></i>Firebase</div>
+    <div class="tech"><i class="fa-solid fa-signal"></i>RxSwift</div>
+    <div class="tech"><i class="fa-solid fa-layer-group"></i>Combine</div>
+    <div class="tech"><i class="fa-solid fa-database"></i>Reactive Programming</div>
+    <div class="tech"><i class="fa-brands fa-azure"></i>Azure</div>
+    <div class="tech"><i class="fa-brands fa-angular"></i>Flutter</div>
+  </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="projects">
-    <h2>Projects</h2>
-    <ul class="projects-list">
-        <li>
-            <strong>Project One</strong> - A website that does XYZ.
-            <br><a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-        </li>
-        <li>
-            <strong>Project Two</strong> - Mobile App for ABC.
-            <br><a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
-        </li>
+<section class="section slide-up">
+  <h2>Key Projects</h2>
+
+  <div class="project-card">
+    <h3>🚗 Poole (App) – Vehicle Tracking Application</h3>
+    <p>
+      Developed Passenger and Driver apps from scratch with live vehicle tracking
+      using Firebase Real-Time Database. Ensured smooth production support and hotfix releases.
+    </p>
+    <ul>
+      <li>Built Passenger and Driver apps using Swift</li>
+      <li>Integrated Firebase Real-Time Database for real-time tracking</li>
+      <li>Resolved production issues and delivered hotfix updates</li>
+      <li>Maintained clean and scalable Swift codebase</li>
+      <li>Tech Stack: Swift, Firebase, Real-Time Database</li>
     </ul>
-</section>
+  </div>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="experience">
-    <h2>Experience</h2>
-    <ul class="exp-list">
-        <li><strong>Intern Developer</strong> - Company Name (2024)</li>
-        <li><strong>Freelance Developer</strong> - Self (2023 – Present)</li>
+  <div class="project-card">
+    <h3>🌿 Plant Identifier – AI Powered Plant Detection App</h3>
+    <p>
+      Developed an AI-based Plant Identifier app that detects plant species
+      and plant diseases using GPT-4 Vision API and provides precaution advice.
+    </p>
+    <ul>
+      <li>Integrated GPT-4 Vision API for plant detection</li>
+      <li>Implemented disease identification and recommendations</li>
+      <li>Designed modern UI using SwiftUI</li>
+      <li>Tech Stack: SwiftUI, GPT-4 Vision API</li>
     </ul>
+  </div>
+
+  <div class="project-card">
+    <h3>🍽️ Delyt – Restaurant Management System</h3>
+    <p>
+      Built a complete Restaurant Management System with User and Manager apps
+      for order placement, approval, and management.
+    </p>
+    <ul>
+      <li>User app for browsing restaurants and placing orders</li>
+      <li>Manager app to review and approve orders</li>
+      <li>Implemented order top-up functionality</li>
+      <li>Tech Stack: Swift</li>
+    </ul>
+  </div>
+
+  <div class="project-card">
+    <h3>🕌 Islamic Bundle – Quran & Qibla App</h3>
+    <p>
+      Developed an Islamic mobile app featuring Quran audio for each Ayat,
+      Rabbana section, and Qibla Compass integration.
+    </p>
+    <ul>
+      <li>Audio playback for Quran Ayat</li>
+      <li>Rabbana section with audio support</li>
+      <li>Integrated Qibla Compass feature</li>
+      <li>Tech Stack: Swift, SwiftUI</li>
+    </ul>
+  </div>
+
+  <div class="project-card">
+    <h3>🎨 TeenArtPass – Maps & Animation App</h3>
+    <p>
+      Contributed to core product development by enhancing modules,
+      implementing Google Maps, and writing optimized MVC code.
+    </p>
+    <ul>
+      <li>Integrated Google Maps functionality</li>
+      <li>Added new features and improved performance</li>
+      <li>Implemented clean MVC architecture</li>
+      <li>Tech Stack: Swift</li>
+    </ul>
+  </div>
+
+  <div class="project-card">
+    <h3>🛡️ GainSafe – Productivity App</h3>
+    <p>
+      Developed GainSafe app from scratch and published it to the App Store
+      with local data storage and adaptive layouts.
+    </p>
+    <ul>
+      <li>Used Realm DB for local data management</li>
+      <li>Created adaptive layouts for iPad</li>
+      <li>Managed full App Store deployment process</li>
+      <li>Tech Stack: Swift</li>
+    </ul>
+  </div>
+
+  <div class="project-card">
+    <h3>🚚 Haulit – Logistics & Tracking App</h3>
+    <p>
+      Implemented real-time tracking, payment gateway integration,
+      and chat module for logistics management.
+    </p>
+    <ul>
+      <li>Integrated Firebase tracking and push notifications</li>
+      <li>Implemented Braintree payment gateway</li>
+      <li>Integrated Google Maps for live tracking</li>
+      <li>Developed in-app chat module</li>
+      <li>Tech Stack: Swift</li>
+    </ul>
+  </div>
+
+  <div class="project-card">
+    <h3>📱 Scan and Save – QR & Barcode Scanner App</h3>
+    <p>
+      Developed a feature-rich scanning app with payment integration,
+      social login, and multi-orientation support.
+    </p>
+    <ul>
+      <li>Implemented QR Code and Barcode scanning</li>
+      <li>Integrated social logins (Facebook, Twitter, Google)</li>
+      <li>Added Braintree payments and Firebase push notifications</li>
+      <li>Supported multi-orientation layouts</li>
+      <li>Tech Stack: Swift</li>
+    </ul>
+  </div>
+
+  <div class="project-card">
+    <h3>🛒 Tazamart.pk – E-Commerce Mobile App</h3>
+    <p>
+      Developed Tazamart.pk e-commerce app from scratch with cart management
+      and analytics tracking.
+    </p>
+    <ul>
+      <li>Implemented cart system using SQLite</li>
+      <li>Integrated Google Analytics and Tag Manager</li>
+      <li>Tracked user interaction and order behavior</li>
+      <li>Tech Stack: Objective-C, Swift</li>
+    </ul>
+  </div>
+
+  <div class="project-card">
+    <h3>🛍️ Sheops – E-Commerce Application</h3>
+    <p>
+      Developed Sheops app and provided long-term maintenance,
+      upgrades, and QA bug fixes.
+    </p>
+    <ul>
+      <li>Implemented client-requested features</li>
+      <li>Fixed QA-reported bugs</li>
+      <li>Provided continuous upgrade support</li>
+      <li>Tech Stack: Objective-C</li>
+    </ul>
+  </div>
+
+  <div class="project-card">
+    <h3>☁️ Cloud59 – Salesforce Integrated App</h3>
+    <p>
+      Integrated Salesforce authentication and multimedia features
+      within a production mobile application.
+    </p>
+    <ul>
+      <li>Implemented Salesforce login integration</li>
+      <li>Added audio and video functionality</li>
+      <li>Maintained legacy Objective-C codebase</li>
+      <li>Tech Stack: Objective-C</li>
+    </ul>
+  </div>
+
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2>Contact</h2>
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button class="btn">Send Message</button>
-    </form>
+<!-- YOUTUBE -->
+<section class="section slide-up">
+  <h2>YouTube Contribution</h2>
+  <p>
+  I run a technical YouTube channel 
+  <strong>Umar Farooq TV</strong>, 
+  where I share content about iOS development, Swift, SwiftUI, Firebase,
+  mobile app architecture, and real-world app development projects.
+</p>
+<p>
+  On this channel, I create tutorials, coding guides, and practical lessons
+  to help beginners and professional developers build production-ready iOS apps.
+</p>
+  <a class="youtube-link"
+     href="https://www.youtube.com/umarfarooqtv"
+     target="_blank">
+    <i class="fa-brands fa-youtube"></i> youtube.com/@umarfarooqtv
+  </a>
 </section>
 
-<!-- FOOTER -->
+</main>
+
 <footer>
-    © 2026 Your Name
+  <p>© 2026 Muhammad Umar Farooq</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
